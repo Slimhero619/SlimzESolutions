@@ -1,14 +1,21 @@
-import { companyName, navItems } from '../data/siteContent'
+import { navItems } from '../data/siteContent'
+import headerLogo from '../assets/Images/slimzz-logo-header-400.png'
 
 function Header() {
   return (
     <header className="ses-header">
       <div className="ses-container ses-header-inner">
         <a className="ses-brand" href="#" aria-label="SLIMZZ Enterprise Solutions home">
-          <span className="ses-brand-mark" aria-hidden="true">
-            SES
+          <div className="ses-brand-icon-wrap">
+            <img 
+              src={headerLogo} 
+              alt="" 
+              className="ses-brand-icon-img" 
+            />
+          </div>
+          <span className="ses-brand-text">
+            SLimzz Enterprise Solutions
           </span>
-          <span>{companyName}</span>
         </a>
 
         <nav aria-label="Primary">

@@ -83,7 +83,7 @@ export const engagementOptions: EngagementOption[] = [
 export const contactContent = {
   heading: 'Ready to clean up your Microsoft 365 environment?',
   text: 'Book a systems review and get a clear, practical execution plan.',
-  email: 'hello@slimzzesolutions.com',
+  email: 'slimzztv@outlook.com',
 }
 
 export const footerKeywords = [

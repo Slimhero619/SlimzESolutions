@@ -8,7 +8,7 @@ function Footer() {
       <div className="ses-container ses-footer-inner">
         <p className="ses-footer-name">{companyName}</p>
         <p className="ses-footer-keywords">{footerKeywords.join(' • ')}</p>
-        <p className="ses-footer-meta">Tampa, FL / Remote</p>
+        <p className="ses-footer-meta">Miami, FL / Remote</p>
         <p className="ses-footer-meta">© {currentYear} {companyName}. All rights reserved.</p>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import { heroContent } from '../data/siteContent'
+import slimzzHeroLogo from '../assets/Images/slimzz-hero-logo.png'
 
 function Hero() {
   return (
@@ -21,9 +22,12 @@ function Hero() {
           </div>
         </div>
 
-        <div className="ses-hero-visual" role="img" aria-label="Founder or brand visual placeholder">
-          {/* Replace this panel with a real founder photo or branded visual asset. */}
-          <p className="ses-hero-visual-label">Founder / Brand Visual Placeholder</p>
+        <div className="ses-hero-visual">
+          <img 
+            src={slimzzHeroLogo} 
+            alt="Slimzz Enterprise Solutions Logo" 
+            className="ses-hero-visual-img"
+          />
         </div>
       </div>
     </section>
@@ -31,3 +35,4 @@ function Hero() {
 }
 
 export default Hero
+
