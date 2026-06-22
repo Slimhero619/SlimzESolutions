@@ -285,9 +285,7 @@
   line-height: 1.56;
 }
 
-.ses-problem-layout,
-.ses-about-layout,
-.ses-contact-inner {
+.ses-problem-layout {
   display: grid;
   gap: 1.2rem;
   align-items: start;
@@ -314,7 +312,7 @@
 }
 
 .ses-about-layout {
-  grid-template-columns: 1.3fr 1fr;
+  max-width: 760px;
 }
 
 .ses-about-quote {
@@ -333,6 +331,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
+  margin-top: 1.8rem;
 }
 
 .ses-highlight-pill {
@@ -507,7 +506,6 @@
 
   .ses-hero-grid,
   .ses-problem-layout,
-  .ses-about-layout,
   .ses-cta-grid,
   .ses-card-grid {
     grid-template-columns: 1fr;

@@ -4,7 +4,7 @@ Single-page website foundation for SLIMZZ Enterprise Solutions, built with React
 
 ## Status
 
-- Mission 3 complete (2026-06-22): logo branding, About copywriting, and Premium Next Step CTA integrations.
+- Mission 3 complete (2026-06-22): logo branding, About copywriting/layout, and Premium Next Step CTA integrations.
 - Mission 2 complete (2026-06-21): reusable component structure created and wired into the page composition layer.
 
 ## Completed Today (Mission 3)
@@ -16,9 +16,10 @@ Single-page website foundation for SLIMZZ Enterprise Solutions, built with React
   - Added CSS filters (`invert`, `hue-rotate`, `brightness`, `contrast`) and `mix-blend-mode: screen` to invert the logo's light background to dark and match its outlines to the site's accent cyan/light blue.
   - Set the logo badge to use a dark-translucent glass background with cyan shadows.
   - Kept the brand text on a single line (`white-space: nowrap`) on desktop while allowing it to stack/wrap naturally next to the logo on mobile.
-- **About Copy & Styling**:
+- **About Copy, Layout & Badge Relocation**:
   - Replaced the placeholder summary in [About.tsx](src/components/About.tsx) with final copywriting for Anthony Drake.
   - Formatted the *"Precision over noise. Simplicity over chaos."* tagline as a blockquote (`blockquote`) and styled it with a left cyan accent border and custom color.
+  - Redesigned layout to a single-column layout (max-width `760px`) to remove empty right-side spaces and relocated credential highlight badges directly below the copy block.
 - **Premium NEXT STEP CTA Card Layout**:
   - Refactored [ContactCTA.tsx](src/components/ContactCTA.tsx) into a three-card engagement layout based on user needs: *Need clarity?*, *Need cleanup?*, and *Need a buildout?*.
   - Styled the cards to match the service cards, including transition hover states (lift, shadow, and border-color glow).
