@@ -311,8 +311,29 @@
   border: 1px solid rgba(119, 190, 255, 0.22);
 }
 
-.ses-about-layout {
-  max-width: 760px;
+.ses-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2rem;
+  align-items: center;
+  width: min(1200px, 94vw);
+  margin: 0 auto;
+}
+
+.ses-about-visual-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ses-about-visual {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid rgba(112, 189, 255, 0.25);
+  box-shadow: 0 20px 45px rgba(3, 7, 18, 0.6);
+  display: block;
 }
 
 .ses-about-quote {
@@ -325,6 +346,7 @@
   font-style: italic;
   line-height: 1.35;
   letter-spacing: 0.01em;
+  max-width: 62ch;
 }
 
 .ses-highlight-row {
@@ -506,6 +528,7 @@
 
   .ses-hero-grid,
   .ses-problem-layout,
+  .ses-about-grid,
   .ses-cta-grid,
   .ses-card-grid {
     grid-template-columns: 1fr;
