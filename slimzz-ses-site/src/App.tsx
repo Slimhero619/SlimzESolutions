@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import ProblemSection from './components/ProblemSection'
+import ProofSection from './components/ProofSection'
 import About from './components/About'
 import EngagementOptions from './components/EngagementOptions'
 import ContactCTA from './components/ContactCTA'
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Services />
         <ProblemSection />
+        <ProofSection />
         <About />
         <EngagementOptions />
         <ContactCTA />

@@ -377,6 +377,28 @@
   font-weight: 600;
 }
 
+/* Proof / Project Examples */
+.ses-proof-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.ses-proof-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ses-proof-label {
+  margin: 0;
+  color: #6fd1ff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .ses-contact {
   padding-bottom: 4.5rem;
 }

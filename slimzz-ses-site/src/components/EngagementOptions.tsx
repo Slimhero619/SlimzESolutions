@@ -4,9 +4,9 @@ function EngagementOptions() {
   return (
     <section className="ses-section" aria-labelledby="engagement-title">
       <div className="ses-container">
-        <p className="ses-kicker">Engagement Options</p>
+        <p className="ses-kicker">How We Work</p>
         <h2 id="engagement-title" className="ses-section-title">
-          Start where the business pressure is highest
+          Three ways to start, depending on where you are
         </h2>
 
         <div className="ses-card-grid">

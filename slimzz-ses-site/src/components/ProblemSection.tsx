@@ -5,13 +5,13 @@ function ProblemSection() {
     <section className="ses-section" aria-labelledby="problem-title">
       <div className="ses-container ses-problem-layout">
         <div>
-          <p className="ses-kicker">Why This Matters</p>
+          <p className="ses-kicker">Sound Familiar?</p>
           <h2 id="problem-title" className="ses-section-title">
-            Most teams already have Microsoft 365. The systems behind it are often the problem.
+            You already have Microsoft 365. The problem is that it may not be working the way it should.
           </h2>
           <p className="ses-section-text">
-            We step in when collaboration platforms exist but operations are unstable, unclear, or too manual
-            to scale.
+            Most organizations don't need more tools. They need the tools they already own to actually work
+            together reliably, with clear processes and someone accountable for keeping them running.
           </p>
         </div>
 

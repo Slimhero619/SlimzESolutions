@@ -14,7 +14,7 @@ function Hero() {
 
           <div className="ses-hero-actions">
             <a className="ses-button ses-button-primary" href="#contact">
-              Book a Systems Review
+              Schedule a Consultation
             </a>
             <a className="ses-button ses-button-secondary" href="#services">
               View Services
