@@ -140,12 +140,14 @@
   align-items: center;
   justify-content: center;
   min-height: 2.8rem;
-  padding: 0.7rem 1.1rem;
+  padding: 0.7rem 1.3rem;
   border-radius: 0.8rem;
   border: 1px solid transparent;
   font-weight: 600;
   text-decoration: none;
-  white-space: nowrap;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: filter 0.18s ease, border-color 0.18s ease, background 0.18s ease;
 }
 
 .ses-button-primary {
@@ -249,25 +251,26 @@
 }
 
 .ses-section {
-  padding: 2.4rem 0;
+  padding: 4rem 0;
 }
 
 .ses-section-title {
   margin: 0;
   color: #e9f4ff;
-  font-size: clamp(1.45rem, 2.7vw, 2.1rem);
-  line-height: 1.22;
+  font-size: clamp(1.5rem, 2.8vw, 2.15rem);
+  line-height: 1.25;
+  max-width: 48ch;
 }
 
 .ses-card-grid {
-  margin-top: 1.4rem;
+  margin-top: 1.8rem;
   display: grid;
-  gap: 1rem;
+  gap: 1.2rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .ses-card {
-  padding: 1.2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   border: 1px solid rgba(124, 194, 255, 0.24);
   background: linear-gradient(165deg, rgba(12, 28, 49, 0.62), rgba(7, 16, 31, 0.82));
@@ -282,7 +285,8 @@
 .ses-card p {
   margin: 0.65rem 0 0;
   color: #9cb6d2;
-  line-height: 1.56;
+  line-height: 1.6;
+  font-size: 0.94rem;
 }
 
 .ses-problem-layout {
@@ -369,38 +373,59 @@
 .ses-card-compact {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.6rem;
+}
+
+.ses-card-compact h3 {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(124, 194, 255, 0.15);
 }
 
 .ses-price {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(124, 194, 255, 0.12);
   color: #81daff;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 /* Proof / Project Examples */
 .ses-proof-card {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1.1rem;
+  padding: 1.6rem;
+}
+
+.ses-proof-card h3 {
+  font-size: 1.12rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(124, 194, 255, 0.15);
 }
 
 .ses-proof-detail {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.3rem;
+}
+
+.ses-proof-detail p {
+  margin: 0;
 }
 
 .ses-proof-label {
   margin: 0;
   color: #6fd1ff;
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
 }
 
 .ses-contact {
-  padding-bottom: 4.5rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
 }
 
 .ses-contact-header {
@@ -461,17 +486,20 @@
 /* Contact Strip */
 .ses-contact-strip {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 1.8rem;
   border: 1px solid rgba(118, 196, 255, 0.24);
   border-radius: 1.2rem;
-  padding: 1.6rem 2.2rem;
+  padding: 2.2rem 2.2rem;
   background: linear-gradient(165deg, rgba(10, 29, 51, 0.65), rgba(5, 16, 30, 0.85));
+  text-align: center;
 }
 
 .ses-contact-strip-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.35rem;
 }
 
@@ -479,14 +507,13 @@
   margin: 0;
   color: #8fb0d1;
   font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
 }
 
 .ses-contact-strip-email {
   margin: 0;
   color: #74d3ff;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -545,7 +572,11 @@
   }
 
   .ses-hero {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
+  }
+
+  .ses-section {
+    padding: 3rem 0;
   }
 
   .ses-hero-grid,
@@ -555,27 +586,42 @@
   .ses-card-grid {
     grid-template-columns: 1fr;
   }
+
+  .ses-card-grid {
+    gap: 1rem;
+  }
+
+  .ses-proof-card {
+    padding: 1.4rem;
+  }
 }
 
 @media (max-width: 640px) {
+  .ses-section {
+    padding: 2.5rem 0;
+  }
+
+  .ses-section-title {
+    font-size: clamp(1.3rem, 5vw, 1.7rem);
+  }
+
   .ses-button {
     width: 100%;
+    white-space: normal;
+    text-align: center;
   }
 
   .ses-hero-actions {
     width: 100%;
   }
 
-  .ses-contact-strip {
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
+  .ses-about-quote {
+    font-size: 1.1rem;
   }
 
-  .ses-contact-strip-left {
-    align-items: center;
+  .ses-contact-strip {
+    padding: 1.5rem;
+    gap: 1.5rem;
   }
 
   .ses-contact-strip-actions {
